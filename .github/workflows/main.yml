@@ -1,6 +1,8 @@
 name: A workflow for my Hello World file
-on: push
-
+on: 
+  schedule:
+    - cron: '15 * * * *'
+  
 jobs:
   build:
     name: Hello world action
